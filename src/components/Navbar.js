@@ -23,9 +23,9 @@ function Navbar() {
         </button>
       </div>
       <div className="links">
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/experience">Experience</Link>
+        <Link to={process.env.PUBLIC_URL + "/"}>Home</Link>
+        <Link to={process.env.PUBLIC_URL + "/projects"}>Projects</Link>
+        <Link to={process.env.PUBLIC_URL + "/experience"}>Experience</Link>
       </div>
     </div>
   );
